@@ -1,4 +1,5 @@
 import { SectionFeedback } from './Sectoin.styled';
+import PropTypes from 'prop-types';
 
 function Section({ title, children }) {
   return (
@@ -8,5 +9,10 @@ function Section({ title, children }) {
     </SectionFeedback>
   );
 }
+
+Section.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node,
+};
 
 export default Section;
